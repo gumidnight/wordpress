@@ -21,16 +21,4 @@ This repository documents the setup and troubleshooting of my personal resume we
 
 ---
 
-## Common Issue: IP Change Breaks Site
 
-### What Happens?
-
-- AWS EC2 public IP changes on instance stop/start.
-- WordPress stores old IP in database, causing broken links and inaccessible admin panel.
-
-### Quick Fix:
-
-1. SSH into the server.
-2. Navigate to WordPress directory:
-   ```bash
-   cd /var/www/html
